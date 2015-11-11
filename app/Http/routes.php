@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Auth\AuthController@getRegister' );
+
 Route::get('home', function(){
 	 $user = Auth::user();
      $chirps = App\Chirp::with('user')->orderBy('created_at', 'desc')->get();
