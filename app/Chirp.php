@@ -9,7 +9,7 @@ class Chirp extends Model
 {
 	protected $table = 'chirps';
 
-    protected $fillable = ['chirp', 'user_id'];
+    protected $fillable = ['chirp', 'name'];
 
     public function user() {
     	return $this->belongsTo('App\User');

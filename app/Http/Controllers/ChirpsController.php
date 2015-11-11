@@ -21,7 +21,7 @@ class ChirpsController extends Controller
     public function index()
     {
 
-       $chirps = Chirp::with('user')->orderBy('created_at', 'desc')->get();
+       $chirps = Chirp::orderBy('created_at', 'desc')->get();
        
        return $chirps;
     }
@@ -46,7 +46,7 @@ class ChirpsController extends Controller
     {
         $user = Auth::user();
         Chirp::create([
-            'user_id' => $request->get('user_id'),
+            'name' => $request->get('name'),
             'chirp' => $request->get('chirp'),
         ]);
         

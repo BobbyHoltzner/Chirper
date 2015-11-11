@@ -14,7 +14,7 @@ class CreateChripsTable extends Migration
     {
         Schema::create('chirps', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->index();
+            $table->string('name');
             $table->string('chirp');
             $table->timestamps();
         });
