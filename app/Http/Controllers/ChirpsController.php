@@ -49,7 +49,7 @@ class ChirpsController extends Controller
             'user_id' => $request->get('user_id'),
             'chirp' => $request->get('chirp'),
         ]);
-        return redirect('home');
+        
     }
 
     /**

@@ -6,7 +6,7 @@
 	<h2>Login or register to continue.</h2>
 		<div class="col-md-6">
 			<h2>Login</h2>
-			<form action="/auth/login">
+			<form action="/auth/login" method="POST">
 				{{ csrf_field() }}
 				<div class="form-group">
 					<label for="">Email Address</label>

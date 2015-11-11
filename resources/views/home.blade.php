@@ -1,8 +1,13 @@
 @extends('layout')
 
 @section('content')
-
-	<h1>Chirper App</h1>
+	<div class="pull-left">
+		<h1>Chirper App</h1>
+	</div>
+	<div style="padding-top:20px;" class="pull-right">
+		<a class="btn btn-primary" href="/auth/logout">Logout</a>
+	</div>
+	<div style="clear:both"></div>
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<h2>New Chirp</h2>
